@@ -18,6 +18,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 header {
 	border-bottom: 1px solid grey;
@@ -47,7 +48,8 @@ footer {
 }
 a {
 	text-decoration: none;
-	color: pink;
+	color: #D82816;
+	font-weight: bold;
 }
 .credits {
 	text-align: right;
@@ -56,4 +58,14 @@ a {
     font-size: 50px;
     font-weight: bold;
     cursor: url(../img/smiley2.png), auto;
+}
+.joke h4:not(:first-child){
+	display: none;
+}
+@media only screen and (max-width: 800px) {
+  main {
+  	display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
